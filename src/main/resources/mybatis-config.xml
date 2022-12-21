@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<typeAliases>
+	  <typeAlias type="java.util.Map" alias="map"/>
+	  <typeAlias type="mysite.kr.code.board.vo.BoardVO" alias="board"/>
+	  <!-- BoardData내부에 클래스 BoardCreate를 지정해주려면 $를 쓴다. -->
+	  <typeAlias type="mysite.kr.code.board.vo.BoardData$BoardCreate" alias="boardCreate"/>
+	  <typeAlias type="mysite.kr.code.login.vo.LoginData$LoginUserInfo" alias="loginVO"/>
+	</typeAliases>
+	
+
+</configuration>
